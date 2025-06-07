@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sub-Contracting | Wags Window Solution</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-include"></div>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-include').innerHTML = html;
+      });
+  </script>
+  <main>
+    <section class="hero contracting-hero">
+      <div class="hero-content">
+        <h1>Sub-Contracting Services</h1>
+        <div class="hero-divider"></div>
+        <p>Partner with Wags Window Solution for reliable and professional sub-contracting services in window film installation.</p>
+        <div class="hero-buttons">
+          <a href="about.html" class="hero-btn about-btn">About Us</a>
+          <a href="contact.html" class="hero-btn contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-is-commercial-film">
+      <div class="container">
+        <h2>What is Sub-Contracting?</h2>
+        <p>
+          Sub-contracting with Wags Window Solution means partnering with experienced professionals for window film installation. We provide reliable, on-time, and high-quality service for contractors, builders, and project managers, ensuring every project meets industry standards and client expectations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Page-specific content goes here -->
+  </main>
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+</body>
+</html>

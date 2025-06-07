@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Wags Window Solution</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-include"></div>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-include').innerHTML = html;
+      });
+  </script>
+  <main>
+    <section class="hero about-hero">
+      <div class="hero-content">
+        <h1>About Wags Window Solution</h1>
+        <div class="hero-divider"></div>
+        <p>Learn more about our mission, values, and the team behind Wags Window Solution.</p>
+        <div class="hero-buttons">
+          <a href="about.html" class="hero-btn about-btn">About Us</a>
+          <a href="contact.html" class="hero-btn contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-is-commercial-film">
+      <div class="container">
+        <h2>What is Wags Window Solution?</h2>
+        <p>
+          Wags Window Solution is dedicated to providing top-quality window film installation services for residential and commercial clients. Our mission is to enhance comfort, efficiency, and protection through innovative solutions and expert craftsmanship.
+        </p>
+      </div>
+    </section>
+
+    <!-- Page-specific content goes here -->
+  </main>
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+</body>
+</html>

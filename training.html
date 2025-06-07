@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training | Wags Window Solution</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-include"></div>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-include').innerHTML = html;
+      });
+  </script>
+  <main>
+    <section class="hero training-hero">
+      <div class="hero-content">
+        <h1>Training & Certification</h1>
+        <div class="hero-divider"></div>
+        <p>Advance your skills with our hands-on training and certification programs in window film installation.</p>
+        <div class="hero-buttons">
+          <a href="about.html" class="hero-btn about-btn">About Us</a>
+          <a href="contact.html" class="hero-btn contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-is-commercial-film">
+      <div class="container">
+        <h2>What is Window Film Training?</h2>
+        <p>
+          Our window film training programs are designed to equip installers with the latest techniques, safety standards, and hands-on experience. Whether you're new to the industry or seeking advanced certification, our training ensures you deliver top-quality results every time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Page-specific content goes here -->
+  </main>
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+</body>
+</html>

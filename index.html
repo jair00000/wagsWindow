@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WagWindows Solution - Your trusted partner for window solutions">
+    <title>WagWindows Solution</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Include -->
+    <!-- Load Navbar -->
+<div id="navbar-include"></div>
+
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar-include').innerHTML = html;
+
+      // ✅ After navbar is injected, now attach JS
+      const hamburger = document.getElementById('navbarHamburger');
+      const menu = document.getElementById('navbarMenu');
+
+      if (hamburger && menu) {
+        hamburger.addEventListener('click', () => {
+          menu.classList.toggle('show');
+        });
+      }
+    });
+</script>
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Wags Window Solutions</h1>
+                <div class="hero-divider"></div>
+                <p>WWS INC. (Wags Window Solutions) is a nationally operating subcontractor specializing in professional window tinting and advanced security film installations. Serving homeowners, businesses, federal buildings, and educational institutions.</p>
+                <p>Our expertise in security film-with specialized wet glaze attachment- sets us apart in the industry. With our one on one training program. Whether local or nationwide, WWS INC. delivers reliable, expert service tailored to your window protection needs.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="hero-btn about-btn">About Us</a>
+                    <a href="contact.html" class="hero-btn contact-btn">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Film Solutions Section -->
+        <section class="film-solutions">
+            <div class="film-grid">
+                <div class="film-item">
+                    <h2 class="film-title"><div class="film-title-bg"><a href="commercial.html" style="color: inherit; text-decoration: none;">Commercial Film</a></div></h2>
+                    <div class="film-image-wrapper">
+                        <img src="public/images/home/Comercial_services.jpg" alt="Commercial Film" class="film-image" />
+                        <a href="commercial.html" class="film-btn learn-btn film-learn-abs">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <p class="film-desc">
+                        Boost energy efficiency, privacy, and comfort in your commercial space with high-quality window films that reduce heat, glare, and UV damage. Ideal for offices, storefronts, and commercial buildings, these films enhance occupant comfort while providing a sleek, professional look and long-term cost savings.
+                    </p>
+                </div>
+                <div class="film-item">
+                    <h2 class="film-title"><div class="film-title-bg"><a href="residential.html" style="color: inherit; text-decoration: none;">Residential Film</a></div></h2>
+                    <div class="film-image-wrapper">
+                        <img src="public/images/home/Residential tab photo.jpg" alt="Residential Film" class="film-image" />
+                        <a href="residential.html" class="film-btn learn-btn film-learn-abs">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <p class="film-desc">
+                        Enhance your home's comfort and privacy with premium residential window films that block heat, reduce glare, and protect interiors from UV fading. These easy-to-maintain films let in natural light while helping homeowners save on energy costs year-round.
+                    </p>
+                </div>
+                <div class="film-item">
+                    <h2 class="film-title"><div class="film-title-bg">About Us</div></h2>
+                    <div class="film-image-wrapper">
+                        <img src="public/images/home/about.jpg" alt="Decorative Film" class="film-image" />
+                        <a href="about.html" class="film-btn learn-btn film-learn-abs">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <p class="film-desc">
+                        At Wags Window Solution, we specialize in window film installation for residential and commercial spaces. From solar and privacy films to safety, security, and decorative solutions, we enhance comfort, efficiency, and protection. Our team delivers top-quality results with precision, reliability, and care.
+
+                    </p>
+                </div>
+                <div class="film-item">
+                    <h2 class="film-title"><div class="film-title-bg">Sub-contracting</div></h2>
+                    <div class="film-image-wrapper">
+                        <img src="public/images/home/sub-contracting.jpg" alt="Safety And Security Film" class="film-image" />
+                        <a href="contracting.html" class="film-btn learn-btn film-learn-abs">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <p class="film-desc">
+                        Offer reliable subcontracting for professional window film installation, ideal for contractors, builders, and project managers. Our skilled team delivers precise, on-time service across residential and commercial projects. Partner with us for trusted results that meet industry standards and client expectations.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>Business Bio</h2>
+            <div class="about-content">
+                <!-- About content will go here -->
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery training-gallery">
+            <div class="container">
+                <div class="training-grid">
+                    <img src="public/images/logo/ourworks_stamp.png" alt="Our Work Stamp" class="work-stamp" />
+                    <div class="training-row">
+                        <div class="training-desc">
+                            <h2 class="training-title"><div class="film-title-bg cream-tape-bg">Trainings</div></h2>
+                            <p>At Wags Window Solution, we specialize in professional window film installation for residential and commercial properties, supported by continuous training and hands-on expertise. Our certified team stays updated with the latest window tinting techniques, tools, and safety standards to ensure top-tier results. Every project reflects our commitment to quality workmanship, precision, and customer satisfaction. With expert training and trusted service, Wags Window Solution delivers top-quality window film solutions tailored to your needs.</p>
+                        </div>
+                        <div class="training-image">
+                            <img id="trainingSliderImg" src="public/images/trainings/Training _ Wet glaze 2.jpg" alt="Training Gallery" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact-cta-block contact-cta-row">
+                    <div class="cta-col cta-col-left">
+                        <div class="cta-script gold-script">Free Estimates!</div>
+                        <div class="cta-title">CONTACT US NOW!</div>
+                        <button class="cta-circle-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="cta-vertical-divider"></div>
+                    <div class="cta-col cta-col-right">
+                        <div class="cta-script gold-script">Stay in touch!</div>
+                        <div class="cta-title">FOLLOW US</div>
+                        <div class="cta-social-icons">
+                            <a href="#" class="cta-social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="cta-social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Wags Windows Solution</h3>
+                <p>"That's the Wags Standard"</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@wagwindows.com</p>
+                <p><i class="fas fa-location-dot"></i> Chicago IL</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 WagsWindows Solution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

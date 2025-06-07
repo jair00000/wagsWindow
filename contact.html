@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Wags Window Solution</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div id="navbar-include"></div>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-include').innerHTML = html;
+      });
+  </script>
+  <main>
+    <section class="hero contact-hero">
+      <div class="hero-content">
+        <h1>Contact Wags Window Solution</h1>
+        <div class="hero-divider"></div>
+        <p>Get in touch with our team for free estimates, questions, or to schedule your window film service.</p>
+        <div class="hero-buttons">
+          <a href="about.html" class="hero-btn about-btn">About Us</a>
+          <a href="contact.html" class="hero-btn contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-is-commercial-film">
+      <div class="container">
+        <h2>Why Contact Wags Window Solution?</h2>
+        <p>
+          Contacting Wags Window Solution connects you with a team of experts ready to assist with your window film needs. Whether you need a free estimate, have questions, or want to schedule a service, we're here to provide prompt, professional support.
+        </p>
+      </div>
+    </section>
+
+    <!-- Page-specific content goes here -->
+  </main>
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+</body>
+</html>
