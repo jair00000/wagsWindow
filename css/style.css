@@ -16,6 +16,7 @@
     --white: #ffffff;
     --max-width: 1200px;
     --poppy-red: rgba(227, 83, 53, 0.9);
+    --benefit-bg: #2C2C2C;
     --font-primary: 'IBM Plex Sans', sans-serif;
     --font-style-script: 'Style Script', cursive;
     --font-truculenta: 'Truculenta', sans-serif;
@@ -454,6 +455,7 @@ footer {
     background-color: #E35335;
     color: var(--white);
     padding: 3rem 2rem 1rem;
+    margin-top: 64px;
 }
 .footer-content {
     display: grid;
@@ -1169,30 +1171,29 @@ footer {
   line-height: 1.2;
 }
 .contact-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 40px;
+  margin-top: 1.5rem;
+  text-align: left;
 }
-.contact-details li {
+.contact-details p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
   display: flex;
   align-items: center;
-  font-size: 1.15rem;
-  color: #232323;
-  gap: 12px;
-  font-family: var(--font-primary);
 }
 .contact-details i {
-  background: #E35335;
-  color: #fdf6e3;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
+  margin-right: 1rem;
+  color: #B8860B;
+  width: 20px;
+  text-align: center;
+}
+.contact-details a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-details a:hover {
+  color: #B8860B;
 }
 .contact-divider {
   width: 92%;
@@ -1567,6 +1568,11 @@ footer {
     font-family: 'Truculenta', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+.what-is-commercial-film p:last-child {
+    margin-bottom: 0;
 }
 
 /* Service Section */
@@ -1973,6 +1979,40 @@ footer {
 .cta-section {
     background: #FFF8E7;
     min-height: 64px;
+}
+
+.cta-section .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* =====================
+   About Us Page
+   ===================== */
+
+.about-benefits .benefits-image-col {
+    background-color: #FFF8E7;  /* Cream color matching the navbar */
+}
+
+.about-benefits .benefits-image {
+    width: 100%;
+    max-width: none;
+    min-width: 320px;
+    height: 480px;
+    border-radius: 0;
+    object-fit: contain;
+    box-shadow: none;
+}
+
+/* About page cream divider */
+.about-divider-section {
+    background: #FFF8E7;
+    min-height: 64px;
+    width: 100%;
+}
+
+.about-divider-section .container {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -2047,6 +2087,18 @@ footer {
     border-radius: 0;
     object-fit: cover;
     box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+}
+.about-benefits .benefits-image-col {
+    background-color: #FFF8E7;  /* Cream color matching the navbar */
+}
+.about-benefits .benefits-image {
+    width: 100%;
+    max-width: none;
+    min-width: 320px;
+    height: 480px;
+    border-radius: 0;
+    object-fit: contain;
+    box-shadow: none;
 }
 .benefits-list-col {
     flex: 1 1 55%;
@@ -2133,4 +2185,144 @@ footer {
     font-weight: 400 !important;
     text-transform: none !important;
     letter-spacing: 0 !important;
-} 
+}
+
+
+.about-benefits .benefits-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: none;
+}
+
+   
+/* =====================
+   Residential Page
+   ===================== */
+
+/* Contact Section Overrides for About Page */
+.project-quote-section + .contact {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Contact Details Styles */
+
+/* Sub-Contracting Page Hero */
+.contracting-hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../public/images/subcontracting/subcontractingHero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--white);
+    z-index: 1;
+    padding: 0;
+}
+
+/* Market Segments Section */
+.market-segments-section {
+  background: #181818;
+  color: #fff;
+  padding: 72px 0 64px 0;
+}
+.market-segments-header {
+  text-align: left;
+  margin: 0 auto 48px auto;
+  max-width: calc(100% - 96px);
+  box-sizing: border-box;
+}
+.market-segments-label {
+  color: #E35335;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-family: 'Truculenta', sans-serif;
+}
+.market-segments-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 0 0.5em 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.market-segments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: calc(100% - 96px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+.market-segment-card {
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 0;
+  padding: 40px 32px 32px 32px;
+  min-height: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+.market-segment-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+.market-segment-card:hover h3 {
+  color: #E35335;
+}
+.market-segment-card:hover p {
+  color: unset;
+}
+.market-segment-card p {
+  font-size: 1.15rem;
+  color: #fff;
+  font-family: 'Truculenta', sans-serif;
+  line-height: 1.7;
+}
+.market-segment-card:hover {
+  border-color: #E35335;
+  box-shadow: 0 4px 32px rgba(227,83,53,0.08);
+}
+@media (max-width: 900px) {
+  .market-segments-title {
+    font-size: 2.1rem;
+  }
+  .market-segments-header {
+    margin-bottom: 32px;
+  }
+  .market-segments-grid {
+    gap: 24px;
+  }
+  .market-segment-card {
+    padding: 28px 16px 20px 16px;
+  }
+  .market-segment-card h3 {
+    font-size: 1.3rem;
+  }
+  .market-segment-card p {
+    font-size: 1rem;
+  }
+}
+
+.partner-benefits-section {
+  margin-top: 64px;
+}
+

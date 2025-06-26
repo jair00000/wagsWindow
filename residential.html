@@ -43,72 +43,252 @@
     </section>
 
     <!-- Residential Services Section -->
-    <section class="residential-services">
-      <h2>Our Residential Services</h2>
-      <div class="services-grid">
-        <div class="service-card"><i class="fas fa-sun"></i><h3>Solar Control Film</h3><p>Keep your home cool, reduce glare, and protect interiors from UV damage.</p></div>
-        <div class="service-card"><i class="fas fa-shield-alt"></i><h3>Safety & Security Film</h3><p>Protect your family and property by reinforcing glass against impacts and break-ins.</p></div>
-        <div class="service-card"><i class="fas fa-eye-slash"></i><h3>Privacy Film</h3><p>Enjoy privacy in bedrooms, bathrooms, and living spaces without sacrificing natural light.</p></div>
-        <div class="service-card"><i class="fas fa-paint-roller"></i><h3>Decorative Film</h3><p>Add style, patterns, or frosted effects to windows, doors, and glass partitions.</p></div>
-        <div class="service-card"><i class="fas fa-tint"></i><h3>UV Protection Film</h3><p>Block harmful UV rays to prevent fading of furniture, flooring, and artwork.</p></div>
-      </div>
-    </section>
-
-    <!-- Residential Building Section -->
-    <section class="residential-building">
-      <h2>Why Choose Us for Your Home?</h2>
-      <div class="building-content">
-        <img src="public/images/home/Residential tab photo.jpg" alt="Residential Building" class="building-img" />
-        <div class="building-text">
-          <ul>
-            <li>Trusted by homeowners across the region</li>
-            <li>Clean, careful, and respectful installation</li>
-            <li>Custom solutions for every window and door</li>
-            <li>Energy savings and enhanced comfort year-round</li>
-          </ul>
+    <!--
+      NOTE: This section uses the same structure and classes as the commercial services section for consistent design.
+      The unique class 'residential-services-mod' is added to the section for easy targeting if custom residential styles are needed in the future.
+      Example: .residential-services-mod .commercial-service-card { ... }
+    -->
+    <section class="commercial-services residential-services-mod">
+      <div class="commercial-services-header">
+        <div class="services-header-col">
+          <div class="explore-your-film">EXPLORE YOUR FILM</div>
+          <div class="services-main-title">Comfort, Privacy, and Lasting Protection</div>
+        </div>
+        <div class="services-header-col">
+          <div class="services-main-desc">
+            Upgrade your living space with advanced residential window film solutions by WAGS®, meticulously designed to enhance comfort, reduce glare, and protect the things that matter most while delivering comfort and long-term value.
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Review Section -->
-    <section class="reviews">
-      <h2>What Homeowners Say</h2>
-      <div class="review-list">
-        <div class="review-card">
-          <p>"The privacy film is perfect for our bathroom and bedrooms. The team was fast and professional!"</p>
-          <span>- Emily R., Homeowner</span>
+      <div class="services-grid commercial-services-grid">
+        <div class="service-card commercial-service-card" style="background-image: url('public/images/residential/decorativefilms.jpg');">
+          <div class="service-card-content">
+            <h3 class="service-title">Decorative</h3>
+            <a href="#" class="film-btn learn-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="review-card">
-          <p>"We noticed a big difference in comfort and energy bills after the solar film was installed. Highly recommend!"</p>
-          <span>- John S., Homeowner</span>
+        <div class="service-card commercial-service-card" style="background-image: url('public/images/residential/solarcontrol.jpg');">
+          <div class="service-card-content">
+            <h3 class="service-title">Solar Control</h3>
+            <a href="#" class="film-btn learn-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <h3>Will window film darken my home?</h3>
-          <p>Our films are designed to let in natural light while reducing heat and glare. Many are nearly invisible!</p>
+    <!-- Residential Benefit Section -->
+    <!--
+      NOTE: This section uses the same structure and classes as the commercial benefits section for consistent design.
+      The unique class 'residential-benefits-mod' is added to the section for easy targeting if custom residential styles are needed in the future.
+      Example: .residential-benefits-mod .benefits-list { ... }
+    -->
+    <section class="benefits-section residential-benefits-mod">
+      <div class="benefits-inner">
+        <div class="benefits-header">
+          <div class="benefits-label">COMFORT, PRIVACY AND LASTING PROTECTION</div>
+          <h2 class="benefits-title"><span class="style-script-font">Key Benefits of</span> WAGS® <span class="style-script-font">Residential Window Film</span></h2>
         </div>
-        <div class="faq-item">
-          <h3>Is the film easy to clean?</h3>
-          <p>Yes, simply clean with a soft cloth and mild soap—no special products needed.</p>
-        </div>
-        <div class="faq-item">
-          <h3>How long does installation take?</h3>
-          <p>Most homes are completed in a single day, with minimal disruption.</p>
+        <div class="benefits-content">
+          <div class="benefits-image-col">
+            <img src="public/images/residential/residentialbenefits.jpg" alt="Residential Window Film Benefits" class="benefits-image" />
+          </div>
+          <div class="benefits-list-col">
+            <ul class="benefits-list">
+              <li>
+                <span class="benefit-heading">Energy Efficiency</span><br>
+                <span class="benefit-desc">Lower household energy bills by reflecting and absorbing solar heat, reducing reliance on air conditioning and maintaining a cooler, more consistent indoor environment year-round.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Glare Reduction</span><br>
+                <span class="benefit-desc">Enjoy clearer views of screens and a more comfortable home atmosphere by reducing harsh glare—perfect for living rooms, kitchens, and home offices.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">UV Protection</span><br>
+                <span class="benefit-desc">Block up to 99% of harmful UV rays to help preserve the color and lifespan of your furniture, flooring, artwork, and interior finishes.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Enhanced Comfort</span><br>
+                <span class="benefit-desc">Create a balanced indoor climate by minimizing hot spots and improving temperature control throughout your home for year-round comfort.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Privacy & Style</span><br>
+                <span class="benefit-desc">Choose from frosted, tinted, or decorative film options to increase privacy, elevate interior design, and complement your home's aesthetic.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Optional Security</span><br>
+                <span class="benefit-desc">For added protection, certain films can be upgraded to improve glass strength and safety, helping protect your home from forced entry or impact.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- Residential FAQ Section -->
+    <!--
+      NOTE: This section uses the same structure and classes as the commercial FAQ section for consistent design.
+      The unique class 'residential-faq-mod' is added to the section for easy targeting if custom residential FAQ styles or scripts are needed in the future.
+      Example: .residential-faq-mod .faq-list { ... }
+    -->
+    <section class="faq residential-faq-mod">
+      <h2>Frequently Asked Questions About Residential Films</h2>
+      <div class="faq-list" id="faqAccordionResidential">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What are the benefits of residential window film?</button>
+          <div class="faq-answer">
+            <p>Residential window film helps reduce heat and glare, blocks harmful UV rays, improves energy efficiency, enhances privacy, and adds a decorative touch—all while maintaining natural light.</p>
+          </div>
+        </div>
+        <div class="faq-divider"></div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Will window film make my home too dark?</button>
+          <div class="faq-answer">
+            <p>Not at all. Modern window films are available in various shades and finishes that reduce glare and heat without significantly darkening your windows, so you can still enjoy bright, natural light.</p>
+          </div>
+        </div>
+        <div class="faq-divider"></div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I still see outside after window film is applied?</button>
+          <div class="faq-answer">
+            <p>Yes, most solar and decorative films are designed to preserve visibility from the inside while enhancing privacy from the outside, especially during the daytime.</p>
+          </div>
+        </div>
+        <div class="faq-divider"></div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is window film safe for all types of glass?</button>
+          <div class="faq-answer">
+            <p>Yes, we assess your window type before installation to ensure the correct film is used—whether it's single-pane, double-pane, or tempered glass.</p>
+          </div>
+        </div>
+        <div class="faq-divider"></div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How long does residential window film last?</button>
+          <div class="faq-answer">
+            <p>High-quality window films can last 10–20 years or more with proper care. They're also easy to clean and require minimal maintenance.</p>
+          </div>
+        </div>
+        <div class="faq-divider"></div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can decorative films be used in bathrooms or glass doors?</button>
+          <div class="faq-answer">
+            <p>Absolutely. Decorative films are ideal for bathrooms, showers, glass doors, or any space where you want added privacy and style.</p>
+          </div>
+        </div>
+        <div class="faq-divider"></div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Are security films available for residential homes?</button>
+          <div class="faq-answer">
+            <p>Yes, upon request. Security films can add an extra layer of protection by helping hold glass together in case of break-ins, accidents, or severe weather.</p>
+          </div>
+        </div>
+        <div class="faq-divider"></div>
+      </div>
+    </section>
+
+    <!-- Project Quote Section -->
+    <section class="project-quote-section">
+      <h2 class="project-quote-title">TELL US ABOUT YOUR PROJECT</h2>
+      <p class="project-quote-subtitle traculenta-text">
+        Discover how WAGS® Residential Window Films can boost energy efficiency, enhance comfort, and improve the look of your home. From living rooms to bedrooms, our premium films are tailored to meet the needs of any residential property. Fill out the form below to connect with a WAGS® specialist and explore custom solutions for your space.
+      </p>
+      <form class="project-quote-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First name<span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name<span class="required">*</span></label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone number<span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="state">State/Region<span class="required">*</span></label>
+            <select id="state" name="state" required>
+              <option value="">Please Select</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="projectDetails">Tell us a little about your project... (Location, Budget, Scope, etc.)</label>
+            <textarea id="projectDetails" name="projectDetails" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="quote-btn">FREE QUOTE</button>
+        </div>
+        <div class="form-row">
+          <p class="form-disclaimer">
+            WAGS® needs the contact information you provide to contact you about our products and services. By submitting this form, you are consenting to receive communications from our team. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please contact us.
+          </p>
+        </div>
+      </form>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-      <h2>Ready to Upgrade Your Home?</h2>
-      <a href="contact.html" class="cta-btn">Request a Free Quote</a>
-    </section>
+    <section class="cta-section"></section>
   </main>
 
   <!-- Footer -->

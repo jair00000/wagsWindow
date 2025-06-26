@@ -70,28 +70,32 @@ if (trainingImg) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const faqAccordion = document.getElementById('faqAccordion');
-  if (faqAccordion) {
-    const items = faqAccordion.querySelectorAll('.faq-item');
-    const questions = faqAccordion.querySelectorAll('.faq-question');
-    questions.forEach((btn, idx) => {
-      btn.addEventListener('click', function() {
-        items.forEach((item, i) => {
-          const answer = item.querySelector('.faq-answer');
-          const questionBtn = item.querySelector('.faq-question');
-          if (i === idx) {
-            const isOpen = item.classList.contains('open');
-            item.classList.toggle('open', !isOpen);
-            questionBtn.setAttribute('aria-expanded', !isOpen);
-          } else {
-            item.classList.remove('open');
-            questionBtn.setAttribute('aria-expanded', 'false');
-          }
+  // FAQ Accordion for both commercial and residential pages
+  function enableFaqAccordion(faqId) {
+    const faqAccordion = document.getElementById(faqId);
+    if (faqAccordion) {
+      const items = faqAccordion.querySelectorAll('.faq-item');
+      const questions = faqAccordion.querySelectorAll('.faq-question');
+      questions.forEach((btn, idx) => {
+        btn.addEventListener('click', function() {
+          items.forEach((item, i) => {
+            const answer = item.querySelector('.faq-answer');
+            const questionBtn = item.querySelector('.faq-question');
+            if (i === idx) {
+              const isOpen = item.classList.contains('open');
+              item.classList.toggle('open', !isOpen);
+              questionBtn.setAttribute('aria-expanded', !isOpen);
+            } else {
+              item.classList.remove('open');
+              questionBtn.setAttribute('aria-expanded', 'false');
+            }
+          });
         });
       });
-    });
-    // Optionally, open the first item by default:
-    // items[0].classList.add('open');
-    // questions[0].setAttribute('aria-expanded', 'true');
+    }
   }
+  enableFaqAccordion('faqAccordion');
+  enableFaqAccordion('faqAccordionResidential');
+  enableFaqAccordion('partnerProcessAccordion');
+  enableFaqAccordion('partnerFaqAccordion');
 }); 

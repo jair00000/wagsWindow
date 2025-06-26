@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <!-- Navbar Include -->
   <div id="navbar-include"></div>
   <script>
     fetch('navbar.html')
@@ -17,6 +18,7 @@
         document.getElementById('navbar-include').innerHTML = html;
       });
   </script>
+
   <main>
     <section class="hero about-hero">
       <div class="hero-content">
@@ -32,17 +34,229 @@
 
     <section class="what-is-commercial-film">
       <div class="container">
-        <h2>What is Wags Window Solution?</h2>
+        <h2>Our Story</h2>
+
         <p>
-          Wags Window Solution is dedicated to providing top-quality window film installation services for residential and commercial clients. Our mission is to enhance comfort, efficiency, and protection through innovative solutions and expert craftsmanship.
+          Hi, I'm Justine Wagner, founder of WAGS® Window Solution and a nationally recognized Madico dealer and certified subcontractor. I specialize in professional window film installation for both residential and commercial spaces, delivering custom solutions that enhance energy efficiency, comfort, privacy, and protection.
+        </p>
+
+        <p>
+          With years of hands-on experience, I've built WAGS® on a foundation of precision, integrity, and client-focused service. Whether it's solar control, decorative designs, or safety and security films, I take pride in offering top-quality work that meets the highest standards. Every project is a reflection of my commitment to reliable results and clean, professional installations.
+        </p>
+
+        <p>
+          I also partner with contractors, builders, and project managers to provide dependable subcontracting services, ensuring every film is installed with accuracy and care—on time and within scope. When you work with WAGS®, you're getting more than a product—you're getting a solution tailored to your needs.
         </p>
       </div>
     </section>
 
-    <!-- Page-specific content goes here -->
+    <!-- Benefits Section -->
+    <section class="benefits-section about-benefits">
+      <div class="benefits-inner">
+        <div class="benefits-header">
+          <div class="benefits-label">EXCELLENCE IN WINDOW FILM SOLUTIONS</div>
+          <h2 class="benefits-title"><span class="style-script-font">Why Choose</span> WAGS® <span class="style-script-font">Window Solution</span></h2>
+        </div>
+        <div class="benefits-content">
+          <div class="benefits-image-col">
+            <img src="public/images/logo/WWS LOGO.png" alt="WAGS Window Solution Logo" class="benefits-image" />
+          </div>
+          <div class="benefits-list-col">
+            <ul class="benefits-list">
+              <li>
+                <span class="benefit-heading">Expert Craftsmanship</span><br>
+                <span class="benefit-desc">Our team brings years of experience and technical expertise to every installation, ensuring flawless results that exceed expectations.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Certified Excellence</span><br>
+                <span class="benefit-desc">As a nationally recognized Madico dealer, we maintain the highest standards of quality and professionalism in the industry.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Comprehensive Solutions</span><br>
+                <span class="benefit-desc">From solar control to security films, we offer a complete range of window film solutions for both residential and commercial needs.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Personalized Service</span><br>
+                <span class="benefit-desc">We take time to understand your specific requirements, providing customized solutions that perfectly match your goals.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Professional Installation</span><br>
+                <span class="benefit-desc">Our clean, efficient installation process minimizes disruption while delivering superior results you can trust.</span>
+              </li>
+              <li>
+                <span class="benefit-heading">Trusted Partnership</span><br>
+                <span class="benefit-desc">As a reliable subcontractor, we work seamlessly with builders and project managers to ensure successful project completion.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Quote Section -->
+    <section class="project-quote-section">
+      <h2 class="project-quote-title">TELL US ABOUT YOUR PROJECT</h2>
+      <p class="project-quote-subtitle traculenta-text">
+        Ready to enhance your space with WAGS® Window Solution? Whether it's a residential or commercial project, we're here to help. Fill out the form below to connect with our team and explore custom solutions tailored to your needs.
+      </p>
+      <form class="project-quote-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First name<span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name<span class="required">*</span></label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone number<span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="state">State/Region<span class="required">*</span></label>
+            <select id="state" name="state" required>
+              <option value="">Please Select</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="projectDetails">Tell us a little about your project... (Location, Budget, Scope, etc.)</label>
+            <textarea id="projectDetails" name="projectDetails" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="quote-btn">FREE QUOTE</button>
+        </div>
+        <div class="form-row">
+          <p class="form-disclaimer">
+            WAGS® needs the contact information you provide to contact you about our products and services. By submitting this form, you are consenting to receive communications from our team. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please contact us.
+          </p>
+        </div>
+      </form>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact-cta-block contact-cta-row">
+          <div class="cta-col cta-col-left">
+            <div class="cta-script gold-script">Contact Information</div>
+            <div class="contact-details">
+              <p><i class="fas fa-map-marker-alt"></i> McHenry, Illinois, United States</p>
+              <p><i class="fas fa-phone"></i> <a href="tel:+18153885109">(815) 388-5109</a></p>
+              <p><i class="fas fa-envelope"></i> <a href="mailto:wagswindowsolutions@gmail.com">wagswindowsolutions@gmail.com</a></p>
+              <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/justinwagner89" target="_blank" rel="noopener noreferrer">linkedin.com/in/justinwagner89</a></p>
+            </div>
+          </div>
+          <div class="cta-vertical-divider"></div>
+          <div class="cta-col cta-col-right">
+            <div class="cta-script gold-script">Stay in touch!</div>
+            <div class="cta-title">FOLLOW US</div>
+            <div class="cta-social-icons">
+              <a href="https://facebook.com/wagswindowsolutions" target="_blank" rel="noopener noreferrer" class="cta-social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/wagswindowsolutions" target="_blank" rel="noopener noreferrer" class="cta-social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cream Divider Section -->
+    <section class="about-divider-section">
+      <div class="container">
+        <!-- Empty section for cream-colored divider -->
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
   <footer>
-    <!-- Footer content here -->
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Wags Windows Solution</h3>
+        <p>"That's the Wags Standard"</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+        <p><i class="fas fa-envelope"></i> info@wagwindows.com</p>
+        <p><i class="fas fa-location-dot"></i> Chicago IL</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 WagsWindows Solution. All rights reserved.</p>
+    </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
