@@ -21,16 +21,7 @@
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar-include').innerHTML = html;
-
-      // ✅ After navbar is injected, now attach JS
-      const hamburger = document.getElementById('navbarHamburger');
-      const menu = document.getElementById('navbarMenu');
-
-      if (hamburger && menu) {
-        hamburger.addEventListener('click', () => {
-          menu.classList.toggle('show');
-        });
-      }
+      if (window.initNavbarDropdown) window.initNavbarDropdown();
     });
 </script>
 

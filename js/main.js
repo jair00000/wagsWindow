@@ -69,7 +69,60 @@ if (trainingImg) {
   }, 3000);
 }
 
+// Dropdown Menu Functionality
+window.initNavbarDropdown = function() {
+  const dropdowns = document.querySelectorAll('.dropdown');
+  dropdowns.forEach((dropdown) => {
+    const arrow = dropdown.querySelector('.dropdown-arrow');
+    if (arrow) {
+      arrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        dropdowns.forEach(otherDropdown => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('active');
+            const menu = otherDropdown.querySelector('.dropdown-menu');
+            if (menu) menu.style.display = '';
+          }
+        });
+        dropdown.classList.toggle('active');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        if (dropdown.classList.contains('active')) {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = '';
+        }
+      });
+    }
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      dropdowns.forEach(dropdown => {
+        dropdown.classList.remove('active');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        if (menu) menu.style.display = '';
+      });
+    }
+  });
+  document.querySelectorAll('.dropdown-menu a').forEach(item => {
+    item.addEventListener('click', function() {
+      dropdowns.forEach(dropdown => {
+        dropdown.classList.remove('active');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        if (menu) menu.style.display = '';
+      });
+    });
+  });
+};
+
 document.addEventListener('DOMContentLoaded', function() {
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar-include').innerHTML = html;
+      if (window.initNavbarDropdown) window.initNavbarDropdown();
+    });
+
   // FAQ Accordion for both commercial and residential pages
   function enableFaqAccordion(faqId) {
     const faqAccordion = document.getElementById(faqId);
@@ -98,4 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
   enableFaqAccordion('faqAccordionResidential');
   enableFaqAccordion('partnerProcessAccordion');
   enableFaqAccordion('partnerFaqAccordion');
+  enableFaqAccordion('faqAccordionSolarPrivacy');
+  enableFaqAccordion('faqAccordionSafetySecurity');
 }); 
