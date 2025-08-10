@@ -149,8 +149,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   enableFaqAccordion('faqAccordion');
   enableFaqAccordion('faqAccordionResidential');
+  enableFaqAccordion('faqAccordionResidentialDecorative');
+  enableFaqAccordion('faqAccordionResidentialSolarControl');
   enableFaqAccordion('partnerProcessAccordion');
   enableFaqAccordion('partnerFaqAccordion');
   enableFaqAccordion('faqAccordionSolarPrivacy');
   enableFaqAccordion('faqAccordionSafetySecurity');
+  enableFaqAccordion('faqAccordionDecorative');
+  enableFaqAccordion('faqAccordionGraffiti');
 }); 

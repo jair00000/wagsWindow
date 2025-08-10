@@ -434,8 +434,80 @@ body {
     padding: 0;
 }
 
+.residential-decorative-hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../public/images/res-decorative/hero_res_decorative.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--white);
+    z-index: 1;
+    padding: 0;
+}
+
+.residential-solar-control-hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../public/images/res-solar-control/hero_res_solar_control.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--white);
+    z-index: 1;
+    padding: 0;
+}
+
+.commercial-decorative-hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../public/images/com-decorative/hero_com_decorative.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--white);
+    z-index: 1;
+    padding: 0;
+}
+
+.commercial-graffiti-hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../public/images/com-graffiti/hero_com_graffiti.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--white);
+    z-index: 1;
+    padding: 0;
+}
+
 .residential-hero .hero-content p,
+.residential-decorative-hero .hero-content p,
+.residential-solar-control-hero .hero-content p,
 .commercial-hero .hero-content p,
+.commercial-decorative-hero .hero-content p,
+.commercial-graffiti-hero .hero-content p,
 .about-hero .hero-content p,
 .contracting-hero .hero-content p,
 .training-hero .hero-content p,
@@ -2608,6 +2680,230 @@ footer {
 }
 
 .solar-privacy-when-why-section .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Residential Decorative When/Why Section Specific Styles */
+.residential-decorative-when-why-section {
+  margin-top: 48px;
+  padding-top: 48px !important;
+  padding-bottom: 64px;
+}
+
+.residential-decorative-when-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .residential-decorative-when-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.residential-decorative-when-grid .residential-decorative-card:nth-child(5),
+.residential-decorative-when-grid .residential-decorative-card:nth-child(6),
+.residential-decorative-when-grid .residential-decorative-card:nth-child(7) {
+  grid-column: span 1;
+}
+
+.residential-decorative-when-grid .residential-decorative-card:nth-child(5) {
+  grid-column: 1;
+}
+
+.residential-decorative-when-grid .residential-decorative-card:nth-child(6) {
+  grid-column: 2;
+}
+
+.residential-decorative-when-grid .residential-decorative-card:nth-child(7) {
+  grid-column: 3;
+}
+
+.residential-decorative-card {
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 0;
+  padding: 40px 32px 32px 32px;
+  min-height: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.residential-decorative-card p {
+  font-size: 1.15rem;
+  color: #fff;
+  font-family: 'Truculenta', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.residential-decorative-card:hover {
+  border-color: #E35335;
+  box-shadow: 0 4px 32px rgba(227,83,53,0.08);
+}
+
+@media (max-width: 1200px) {
+  .residential-decorative-when-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .residential-decorative-when-grid .residential-decorative-card:nth-child(5),
+  .residential-decorative-when-grid .residential-decorative-card:nth-child(6),
+  .residential-decorative-when-grid .residential-decorative-card:nth-child(7) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .residential-decorative-when-why-section {
+    margin-top: 60px;
+  }
+  
+  .residential-decorative-when-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: calc(100% - 48px);
+    padding-left: 24px;
+  }
+  
+  .residential-decorative-when-grid .residential-decorative-card:nth-child(5),
+  .residential-decorative-when-grid .residential-decorative-card:nth-child(6),
+  .residential-decorative-when-grid .residential-decorative-card:nth-child(7) {
+    grid-column: span 1;
+  }
+  
+  .residential-decorative-card {
+    padding: 28px 16px 20px 16px;
+    min-height: 180px;
+  }
+  
+  .residential-decorative-card p {
+    font-size: 1rem;
+  }
+}
+
+.residential-decorative-when-why-section .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Residential Solar Control When/Why Section Specific Styles */
+.residential-solar-control-when-why-section {
+  margin-top: 48px;
+  padding-top: 48px !important;
+  padding-bottom: 64px;
+}
+
+.residential-solar-control-when-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .residential-solar-control-when-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.residential-solar-control-when-grid .residential-solar-control-card:nth-child(5),
+.residential-solar-control-when-grid .residential-solar-control-card:nth-child(6),
+.residential-solar-control-when-grid .residential-solar-control-card:nth-child(7) {
+  grid-column: span 1;
+}
+
+.residential-solar-control-when-grid .residential-solar-control-card:nth-child(5) {
+  grid-column: 1;
+}
+
+.residential-solar-control-when-grid .residential-solar-control-card:nth-child(6) {
+  grid-column: 2;
+}
+
+.residential-solar-control-when-grid .residential-solar-control-card:nth-child(7) {
+  grid-column: 3;
+}
+
+.residential-solar-control-card {
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 0;
+  padding: 40px 32px 32px 32px;
+  min-height: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.residential-solar-control-card p {
+  font-size: 1.15rem;
+  color: #fff;
+  font-family: 'Truculenta', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.residential-solar-control-card:hover {
+  border-color: #E35335;
+  box-shadow: 0 4px 32px rgba(227,83,53,0.08);
+}
+
+@media (max-width: 1200px) {
+  .residential-solar-control-when-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .residential-solar-control-when-grid .residential-solar-control-card:nth-child(5),
+  .residential-solar-control-when-grid .residential-solar-control-card:nth-child(6),
+  .residential-solar-control-when-grid .residential-solar-control-card:nth-child(7) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .residential-solar-control-when-why-section {
+    margin-top: 60px;
+  }
+  
+  .residential-solar-control-when-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: calc(100% - 48px);
+    padding-left: 24px;
+  }
+  
+  .residential-solar-control-when-grid .residential-solar-control-card:nth-child(5),
+  .residential-solar-control-when-grid .residential-solar-control-card:nth-child(6),
+  .residential-solar-control-when-grid .residential-solar-control-card:nth-child(7) {
+    grid-column: span 1;
+  }
+  
+  .residential-solar-control-card {
+    padding: 28px 16px 20px 16px;
+    min-height: 180px;
+  }
+  
+  .residential-solar-control-card p {
+    font-size: 1rem;
+  }
+}
+
+.residential-solar-control-when-why-section .container {
   padding-left: 0;
   padding-right: 0;
 }
